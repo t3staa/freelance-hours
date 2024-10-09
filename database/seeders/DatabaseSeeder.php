@@ -23,7 +23,5 @@ class DatabaseSeeder extends Seeder
             
             Proposal::factory()->count(random_int(4,45))->create(['project_id' => $project->id]);
         });
-
-        
     }
 }
