@@ -44,6 +44,8 @@ class Create extends Component
     
             $this->arrangePositions($proposal);
         });
+
+        $this->project->authot->notify(new NewProposal($this->project));
         
 
         $this->dispatch('proposal::created');
